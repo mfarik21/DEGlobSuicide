@@ -1,6 +1,6 @@
 version: '3'
 services:
-  ecoenergy_de:
+  globsuicide:
     image: mageai/mageai:0.9.65
     container_name: globsuicide
     command: mage start mage-globsuicide

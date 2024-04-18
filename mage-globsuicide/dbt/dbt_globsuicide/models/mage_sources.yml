@@ -1,0 +1,14 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_dbt_globsuicide
+  schema: globsuicide_bq_dataset
+  tables:
+  - description: Dataframe for block `export_data_to_bigquery` of the `globsuicide_data_to_bigquery`
+      mage pipeline.
+    identifier: mage_globsuicide_data_to_bigquery_export_data_to_bigquery
+    meta:
+      block_uuid: export_data_to_bigquery
+      pipeline_uuid: globsuicide_data_to_bigquery
+    name: globsuicide_data_to_bigquery_export_data_to_bigquery
+version: 2

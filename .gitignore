@@ -1,4 +1,5 @@
 .env
 venv
 secrets/*
+mage_data
 pipelines_python/git 
