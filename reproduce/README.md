@@ -98,6 +98,7 @@ Then run the command inside the Docker image terminal. You have to move to the r
 cd /home/src/mage-globsuicide
 ```
 
+
 And then run the following command:
 
 ```bash

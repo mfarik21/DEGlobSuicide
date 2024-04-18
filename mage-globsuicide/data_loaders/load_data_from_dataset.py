@@ -12,8 +12,8 @@ def load_data_from_dataset(*args, **kwargs):
     and then read the data
     """
 
-    loader = FileIO(verbose=True)
-    suicide_rates_df = loader.load('./dataset/suicide_rates_1990-2022.csv')
+    loader = FileIO(verbose=True)    
+    suicide_rates_df = loader.load('/home/src/dataset/suicide_rates_1990-2022.csv')
 
     # map data types
     suicide_rates_dtypes = {
