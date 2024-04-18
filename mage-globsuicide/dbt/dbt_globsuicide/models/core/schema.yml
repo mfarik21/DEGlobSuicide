@@ -1,0 +1,55 @@
+version: 2
+
+
+models:
+  - name: fact_globsuicide_data
+    description: >
+      This dataset offers a comprehensive view of global suicide trends from 1990 to 2022, 
+      focusing on crude suicide rates. It provides data on region, country, year, and key 
+      suicide metrics like: Suicide Counts: The raw number of suicides recorded.
+      Cause-Specific Death Percentage: The percentage of total deaths attributed to suicide. 
+      This is taking the total suicide deaths divided by deaths caused by other causes,
+      including suicide, and multiplying by 100. Death Rate per 100,000 Population (Crude): 
+      The unadjusted number of suicides per 100,000 people in the population.
+
+      Additional Information
+      Economic factors like GDP, GDP per capita, GNI, GNI per capita, inflation rates, and
+      employment-to-population ratios are included to explore potential socio-economic
+      influences on suicide rates.
+    columns:
+    - name: region_code
+      decription: Unique identifier for the region (e.g., South Asia, Europe).
+    - name: region_name
+      decription: Full name of the region.
+    - name: country_code
+      decription: Unique identifier for the country.
+    - name: country_name
+      decription: Full name of the country.
+    - name: year
+      decription: Year for which the data was collected.
+    - name: sex
+      decription: Gender.
+    - name: age_group
+      decription: The age range the data falls into, like 15-24 years old or 65+ years old.
+    - name: generation
+      decription: The number of suicides recorded in that country, year, age group, and gender.
+    - name: suicide_count
+      decription: Number of suicides recorded.
+    - name: cause_specific_death_percentage
+      decription: The percentage of total deaths attributed to suicide within a given population.
+    - name: death_rate_per_100k
+      decription: The unadjusted number of suicides per 100,000 people in the population.
+    - name: population
+      decription: Population count of the country.
+    - name: gdp
+      decription: Total value of all goods and services produced in a country.
+    - name: gdp_per_capita
+      decription: Average economic output per person in a country.
+    - name: gross_national_income
+      decription: Total income earned by a country's residents and businesses.
+    - name: gni_per_capita
+      decription: Average income per person in a country.
+    - name: inflation_rate
+      decription: Rate at which prices of goods and services rise over time.
+    - name: employment_population_ratio
+      decription: Percentage of working-age people who are employed.
