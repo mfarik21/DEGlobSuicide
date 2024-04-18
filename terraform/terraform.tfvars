@@ -1,0 +1,6 @@
+credentials = "../secrets/globsuicide-service-acc.json"
+project_id  = "de-zoomcamp-412513"
+region      = "us-central1"
+bucket_name = "globsuicide_dataset"
+dataset_id  = "globsuicide_bq_dataset"
+table_id    = "globsuicide_data"

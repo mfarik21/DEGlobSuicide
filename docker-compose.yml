@@ -1,0 +1,18 @@
+version: '3'
+services:
+  ecoenergy_de:
+    image: mageai/mageai:0.9.65
+    container_name: globsuicide
+    command: mage start mage-globsuicide
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      USER_CODE_PATH: /home/src/globsuicide
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/home/src/
+    restart: on-failure:5
